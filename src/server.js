@@ -21,7 +21,7 @@ mongoose.connect('mongodb+srv://victor:admin@cluster0-jpxxr.gcp.mongodb.net/test
   useNewUrlParser: true
 })
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   req.io = io
   return next()
 })
