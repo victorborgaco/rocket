@@ -14,7 +14,6 @@ io.on('connection', socket => {
   socket.on('connectRoom', box => {
     socket.join(box)
   })
-
 })
 
 mongoose.connect('mongodb+srv://victor:admin@cluster0-jpxxr.gcp.mongodb.net/test?retryWrites=true', {
